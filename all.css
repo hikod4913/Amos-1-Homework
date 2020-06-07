@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,500&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	font-family: 'EB Garamond', Sans-serif;
+}
+ol, ul, nav {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+}
+
+/* pc layout start */
+/* common start */
+
+
+*{
+	box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.b-pos-siz{
+	background-size: cover;
+	background-position: center center;
+}
+.divider{
+	width: 40px;
+	border-bottom: 3px solid #000;
+	position: relative;
+}
+.divider:before{
+	content: "";
+	position: absolute;
+	width: 40px;
+	border-bottom: 1px solid #000;
+	left: 0;
+	bottom: -6px;
+}
+.btn{
+	padding: 14px 25px;
+	background-color: transparent;
+	font-family: 'EB Garamond', Sans-serif;
+	letter-spacing: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s;
+	outline: none;
+}
+/* common end */
+
+
+/* header start */
+.header{
+	color: #fff;
+	height: 100vh;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%2011.jpeg?raw=true);
+	padding: 50px 0;
+}
+.header .navBar{
+	width: 45%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.header .navBar a{
+	color: #fff;
+	position: relative;
+	letter-spacing: 2.5px;
+	font-size: 16px;
+}
+.header .navBar a:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	border-bottom: 1px solid #fff;
+	left: 0;
+	bottom: -10px;
+	transition: width .3s;
+}
+.header .navBar a:hover:before{
+	width: 100%;
+}
+.header .logo{
+	text-align: center;
+	padding: 100px 0 80px;
+}
+.header .headerTxt{
+	text-align: center;
+	font-style: italic;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+.header .bookBtn{
+	justify-content: center;
+}
+.header .bookOnline{
+	color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 0 #fff;
+}
+.header .bookOnline:hover{
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 0 0;
+}
+
+/* header end */
+
+/* latteccinoContent start */
+.latteccinoContent {
+	height: 130vh;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/img3.png?raw=true);
+	background-attachment: fixed;
+	padding-top: 80px;
+}
+.latteccinoContent .container{
+	padding-left: 10%;
+}
+.latteccinoContent h2{
+	font-size: 70px;
+	font-weight: 400;
+	color: #433930;
+	margin-bottom: 20px;
+}
+.latteccinoContent h3{
+    font-size: 30px;
+	font-style: italic;
+	color: #433930;
+	margin-bottom: 45px;
+}
+.latteccinoContent .divider{
+	margin-bottom: 55px;
+}
+.latteccinoContent p{
+	color: #828282 ;
+	font-size: 26px;
+	margin-bottom: 100px;
+}
+.latteccinoContent .reservationBtn{
+	box-shadow: 5px 5px 0 #000;
+}
+.latteccinoContent .reservationBtn:hover{
+	box-shadow: 0 0 0 #fff;
+	color: #fff;
+	background-color: #000;
+}
+/* latteccinoContent end */
+
+
+/* categoryList start */
+.categoryList ul{
+	justify-content: space-between;
+	margin-top: -50px;
+}
+.categoryList .list-1{
+	width: 30%;
+	min-width: 300px;
+	height: 600px;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%201.jpeg?raw=true);
+}
+.categoryList .list-2{
+	width: 30%;
+	min-width: 300px;
+	height: 600px;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%202.jpeg?raw=true);
+}
+.categoryList .list-3{
+	width: 30%;
+	min-width: 300px;
+	height: 600px;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%203.jpeg?raw=true);
+}
+.categoryList li{
+	line-height: 600px;
+	text-align: center;
+}
+.categoryList .listItem{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .3);
+	opacity: 0;
+	transition: .3s;
+}
+.categoryList .listItem a{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	font-size: 56px;
+	color: #fff;
+	line-height: 1.2;
+	vertical-align: middle;
+}
+.categoryList .listItem:hover{
+	opacity: 1;
+}
+/* categoryList end */
+
+
+/* menu start */
+.menu{
+	width: 100%;
+	height: 200vh;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%2013.jpeg?raw=true);
+	background-attachment: fixed;
+	padding-top: 100px;
+}
+.menu h2{
+	font-size: 70px;
+	text-align: center;
+	
+	margin-bottom: 50px;
+}
+.menu .divider{
+	margin: 0 auto 50px;
+}
+.menu .menuList ul{
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.menu .menuList li{
+	text-align: center;
+	width: 32%;
+}
+.menu .menuList li img{
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.menu .menuList li h3 a{
+	display: block;
+	font-size: 26px;
+	color: #000;
+	margin-bottom: 10px;
+}
+.menu .menuList li h4{
+	font-size: 26px;
+}
+.menu .menuList li p{
+	font-size: 20px;
+}
+.menu .menuBtn{
+	justify-content: center;
+}
+.menu .seeMenu{
+	box-shadow: 5px 5px 0 #000;
+}
+.menu .seeMenu:hover{
+	box-shadow: 0 0 0 #fff;
+	color: #fff;
+	background-color: #000;
+}
+/* menu end */
+
+
+/* menuIntro start */
+.menuIntro{
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%2014.jpeg?raw=true);
+	padding: 10% 0;
+	text-align: center;
+}
+.menuIntro .introIcon{
+	margin-bottom: 50px;
+}
+.menuIntro h2{
+	font-size: 70px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.menuIntro .divider{
+	margin: 0 auto 25px;
+	border-bottom: 3px solid #fff;
+}
+.menuIntro .divider:before{
+	border-bottom: 1px solid #fff;
+}
+.menuIntro p{
+	color: #fff;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+.menuIntro .visitBtn{
+	justify-content: center;
+}
+.menuIntro .visitUsBtn{
+	border: 1px solid #fff;
+	color: #fff;
+	box-shadow: 5px 5px 0 #fff;
+}
+.menuIntro .visitUsBtn:hover{
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 0 0;
+}
+/* menuIntro end */
+
+
+/* suggestion start */
+.suggestion{
+	width: 100%;
+	height: 120vh;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%2013.jpeg?raw=true);
+	background-attachment: fixed;
+	text-align: center;
+	padding: 150px 0;
+}
+.suggestion h2{
+	font-size: 70px;
+	margin-bottom: 25px;
+}
+.suggestion .divider{
+	margin: 0 auto 25px;
+}
+.suggestion .suggestionTxt p{
+	color: #888;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+.suggestion .suggestionTxt h3{
+	font-size: 26px;
+	margin-bottom: 25px;
+}
+.suggestion .suggestionTxt h4{
+	font-size: 20px;
+	color: #888;
+	margin-bottom: 25px;
+}
+.suggestion .listGroup{
+	justify-content: center;
+}
+.suggestion .listGroup .listSymbol{
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.suggestion .listGroup .listSymbol:first-child ~ .listSymbol{
+	background-color: #888;
+}
+/* suggestion end */
+
+
+/* footer start */
+.footer{
+	width: 100%;
+	background-image: url(https://github.com/hikod4913/Amos-1-Homework/blob/master/pic/asset%2015.jpeg?raw=true);
+	text-align: center;
+	padding: 140px 0 30px;
+}
+.footer .footerContent{
+	height: 50vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer .footerTxt{
+	margin-bottom: 100px;
+}
+.footer .footerTxt p{
+	font-style: italic;
+	font-size: 26px;
+	color: #fff;
+}
+.footer .copyright p{
+	font-size: 16px;
+	color: #fff;
+}
+/* footer end */
